@@ -4,12 +4,12 @@
 
 ```js
 class Rectangle {
-	constructor(sideA, sideB) {
-		this.sideA = sideA;
-		this.sideB = sideB;
-		this.area = sideA * sideB;
-		this.perimeter = sideA * 2 + sideB * 2;
-	}
+  constructor(sideA, sideB) {
+    this.sideA = sideA;
+    this.sideB = sideB;
+    this.area = sideA * sideB;
+    this.perimeter = sideA * 2 + sideB * 2;
+  }
 }
 ```
 
@@ -20,18 +20,18 @@ class Rectangle {
 
 ```js
 class Book {
-	constructor(title, author) {
-		this.title = this.titleize(title);
-		this.author = this.titleize(author);
-	}
+  constructor(title, author) {
+    this.title = this.titleize(title);
+    this.author = this.titleize(author);
+  }
 
-	titleize(string) {
-		let words = string.split(' ');
-		for (let n = 0; n < words.length; n++) {
-			words[n] = words[n].charAt(0).toUpperCase() + words[n].slice(1);
-		}
-		return words.join(' ');
-	}
+  titleize(string) {
+    let words = string.split(' ');
+    for (let n = 0; n < words.length; n++) {
+      words[n] = words[n].charAt(0).toUpperCase() + words[n].slice(1);
+    }
+    return words.join(' ');
+  }
 }
 ```
 
